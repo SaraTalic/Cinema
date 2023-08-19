@@ -41,6 +41,21 @@ Route::post('/movies/{movie}/rezervacija', [MovieController::class, 'storeReserv
 //Kontakt
 Route::get('/kontakt',[Controller::class,'kontakt']);
 
+//Moje rezervacije
+Route::get('/mojerezervacije', [MovieController::class, 'manage']);
+
+//Jedna rezervacija
+Route::get('/mojerezervacije/{id}',[MovieController::class,'single']);
+
+//Edit forma rezervacije
+Route::get('/mojerezervacije/{usersreservation}/edit', [MovieController::class, 'edit'])->middleware('auth');
+
+// Update rezervaciju
+Route::put('/mojerezervacije/{usersreservation}', [MovieController::class, 'update'])->middleware('auth');
+
+// Delete rezervaciju
+Route::delete('/mojerezervacije/{usersreservation}', [MovieController::class, 'destroy'])->middleware('auth');
+
 // Show Register/Create Form
 Route::get('/register', [UserController::class, 'create']);
 

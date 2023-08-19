@@ -23,18 +23,22 @@
              <select name="time" class="form-control">
                 <option> - </option>
                 @foreach($str_arr as $s)
+                <?php if($event->time == $s.':00') { ?> <option selected>{{$s}}</option> <?php }else{?>
+                
                  <option >{{$s}}</option>
+                 <?php }?>
                  @endforeach
             </select>
            </div>
            <div class="booking_right_main_2_inner clearfix">
              <p>Odaberite datum</p>
-             <input name="date" type="date" id="date">
+             <input name="date" type="date" id="date" value="{{$event->date}}">
            <div> 
             <p>Odaberite broj karata</p>
-            <input name="number_of_tickets" type="number" id="broj">
+            <input name="number_of_tickets" type="number" id="broj" value="{{$ur->number_of_tickets}}">
            </div>
-             <button type="submit" id="potvrda">Potvrdi </button>
+             <button type="submit" id="izmjena"> Izmijeni </button>
+             <button type="submit" id="obrisi"> Obrisi </button>
             <p class="p_1">Please complete the form above.</p>
            
         </form>

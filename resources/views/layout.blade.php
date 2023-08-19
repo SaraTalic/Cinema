@@ -41,10 +41,24 @@
 	  </div>
 	  <div class="col-sm-9">
 	   <div class="top_2_right text-right">
+		@auth
+		<ul>
+			<li><a href="/mojerezervacije">Moje rezervacije</a></li>
+			<form class="inline" method="POST" action="/logout">
+				@csrf
+				<button type="submit">
+				  <i class="fa-solid fa-door-closed"></i> Odjava
+				</button>
+			  </form>
+		   </ul>
+			
+		
+		@else
 	     <ul>
 	   <li><a href="/login">Prijava</a></li>
 	   <li class="border_none_1"><a href="/register">Registracija</a></li>
 	  </ul>
+	  @endauth
 	   </div>
 	  </div>
 	 </div>

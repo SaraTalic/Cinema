@@ -23,7 +23,8 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Schema::create('user_res', function (Blueprint $table) {
+        Schema::create('usersreservations', function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger('user_id');
             $table->integer('number_of_tickets');
             $table->unsignedBigInteger('event_id');
@@ -37,6 +38,7 @@ return new class extends Migration
                 ->on('events')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
+            $table->timestamps();
         });
     }
 
