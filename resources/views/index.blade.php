@@ -1,30 +1,51 @@
 @extends('layout')
 
 @section('content')
-<section id="center" class="center_home clearfix">
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-        <!-- Overlay -->
-        <div class="overlay"></div>
-            
-    <!-- <div class="carousel-inner">
-        @foreach($movies as $movie)
-        @if($movie->trending== 'yes')
-            <div class="carousel-item active">
-              <img src="images/{{$movie->logo}}" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-md-block">
-               <h1 class="font_60"> {{$movie->title}}</h1>
-               <h6 class="mt-3">
-               Trajanje: {{$movie->duration}}
-                 
-               </h6>
-               <p class="mt-3">{{$movie->description}}</p>
-              
-              </div>
-            </div>
-        @endif
-        @endforeach
-    </div> -->
-</section>
+<section id="header" class="clearfix cd-secondary-nav">
+    <div class="container">
+     <div class="row">
+      <div class="header_main clearfix">
+        <nav class="navbar navbar-default">
+                      <div class="navbar-header">
+                                   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                           <span class="sr-only">Toggle navigation</span>
+                                           <span class="icon-bar"></span>
+                                           <span class="icon-bar"></span>
+                                           <span class="icon-bar"></span>
+                                   </button>
+                                   <a class="navbar-brand" href="#">KinoIzKraja <span>od 1999.</span></a>
+                  </div>
+           
+           
+           <div class="collapse navbar-collapse js-navbar-collapse">
+                   <ul class="nav navbar-nav navbar-right">
+                           <li><a class="font_tag active_tag" href="/">Početna</a></li>
+                           <li><a class="font_tag" href="/repertoar">Repertoar</a></li>
+                           <li><a class="font_tag" href="/uskoro">Uskoro</a></li>
+                           <li><a class="font_tag" href="/cjenovnik">Cjenovnik</a></li>
+                           <li><a class="font_tag border_none_1" href="/kontakt">Kontakt</a></li>
+                   </ul>
+                   
+           </div><!-- /.nav-collapse -->
+   </nav>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="center" class="center_events1 clearfix">
+    <div class="center_events_main text-center clearfix">
+     <div class="container">
+     <div class="row">
+      <div class="col-sm-12">
+       <div class="center_events_1 clearfix">
+         <h1>Kino po tvojoj mjeri </h1>
+       </div>
+      </div>
+     </div>
+    </div>
+    </div>
+   </section>
+   
 
 <section id="booking">
     <div class="container">
@@ -41,17 +62,17 @@
                <div class="tab-content clearfix">
                  <div id="home" class="tab-pane fade in active clearfix">
                     <div class="click clearfix">
-                     
+                       
+                            <div class="click_1 clearfix">
+                             <h3> <a class="pull-right" href="#"> KinoIzKraja</a></h3>
+                            </div>
                      <div class="click_2 clearfix">
                        @foreach($movies as $movie)
                        @if($movie->on_air == 'yes')
                        <x-movie-one-card :movie="$movie" />
                        @endif
                        @endforeach
-
-                       
-                     
-                 </div>
+                    </div>
                     </div>
                  </div>
                  <div id="menu1" class="tab-pane fade clearfix">

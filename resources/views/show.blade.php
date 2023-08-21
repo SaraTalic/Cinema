@@ -1,7 +1,37 @@
 @extends('layout')
 
 @section('content')
-
+<section id="header" class="clearfix cd-secondary-nav">
+	<div class="container">
+	 <div class="row">
+	  <div class="header_main clearfix">
+		<nav class="navbar navbar-default">
+					  <div class="navbar-header">
+								   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+										   <span class="sr-only">Toggle navigation</span>
+										   <span class="icon-bar"></span>
+										   <span class="icon-bar"></span>
+										   <span class="icon-bar"></span>
+								   </button>
+								   <a class="navbar-brand" href="#">KinoIzKraja <span>od 1999.</span></a>
+				  </div>
+		   
+		   
+		   <div class="collapse navbar-collapse js-navbar-collapse">
+				   <ul class="nav navbar-nav navbar-right">
+						   <li><a class="font_tag" href="/">Početna</a></li>
+						   <li><a class="font_tag" href="/repertoar">Repertoar</a></li>
+						   <li><a class="font_tag" href="/uskoro">Uskoro</a></li>
+						   <li><a class="font_tag" href="/cjenovnik">Cjenovnik</a></li>
+						   <li><a class="font_tag border_none_1" href="/kontakt">Kontakt</a></li>
+				   </ul>
+				   
+		   </div><!-- /.nav-collapse -->
+   </nav>
+	  </div>
+	 </div>
+	</div>
+   </section>
 
 <section id="center" class="center_detail clearfix">
   <div class="container">
@@ -9,7 +39,7 @@
     <div class="center_detail_main clearfix">
 	  <div class="col-sm-4">
 	   <div class="center_detail_main_left clearfix">
-	     <img src="/images/{{$movie->logo}}" width="100%" height="220px">
+	     <img src="/images/{{$movie->logo}}" class="movie-logo">
 	   </div>
 	  </div>
 	  <div class="col-sm-8">
@@ -67,7 +97,9 @@
 			  <div id="home" class="tab-pane fade in active clearfix">
 				 <div class="click clearfix">
                     <h4><a href="#">TERMINI </a></h4>
-					<button><a href="/movies/{{$movie->id}}/rezervacija"> Rezervisi karte </a> </button>
+					<div class="digmerez">
+					<button name="rezervisi"><a href="/movies/{{$movie->id}}/rezervacija"> Rezervisi karte </a> </button>
+					</div>
 					<p> {{$movie->time}} </p>
 					
 			      </div>
@@ -168,7 +200,7 @@
    @if($m->on_air == "yes")
   <div class="col-sm-3 space_left">
     <div class="detail_main_right_1_inner_1 clearfix">
-      <a href="#"><img src="/images/{{$m->logo}}" width="100%" height="220px"></a>
+      <a href="#"><img src="/images/{{$m->logo}}" width="90%" height="300px"></a>
       <p class="text-center"><a href="#">{{$m->title}}</a></p>
    </div>
   </div>

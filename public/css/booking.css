@@ -1,0 +1,182 @@
+#booking1 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make sure the section takes full viewport height */
+   
+    background: #f4f4f4;
+  }
+  
+  .booking_right_main {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the booking form */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+  }
+  
+   .booking_right_main_1{
+     background:#cf0000;
+     padding:10px;
+     }
+   .booking_right_main_1 ul li{
+    color:#fff;
+    font-size:24px;
+    display:inline-block;
+     }
+   .booking_right_main_1 ul li a{
+    color:#fff;
+    background:#9e0a0a;
+    width:45px;
+    height:45px;
+    text-align:center;
+    border-radius:100%;
+    display:block;
+     }
+   .booking_right_main_1 ul a i{
+   line-height:45px;  
+     }
+   .book_1{
+   margin-top:5px;
+     }
+   .booking_right_main_2 {
+    background:#333; 
+    padding:0px 15px 30px 15px;
+     }
+   .booking_right_main_2_inner{
+    margin-top:20px; 
+     }
+   .booking_right_main_2_inner p{
+   font-size:18px;
+   color:#333;
+     }
+   .booking_right_main_2_inner .form-control{
+     margin-top:8px;
+     height:40px;
+     font-size:16px;
+     background:#eee;
+     }
+   .booking_right_main_2_inner .p_1{
+   margin-top:20px;
+   font-size:14px;  
+     }
+   .booking_right_main_2_inner h4{
+   color:#fff;
+   margin-top:20px;
+   border-bottom:1px solid #666;
+   padding-bottom:8px;
+   margin-bottom:20px; 
+     }
+  /* Add or adjust these styles in your existing stylesheet */
+/* Add or adjust these styles in your existing stylesheet */
+
+.odaberikarte p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    
+  }
+  
+  #broj {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .dugmepotvrda button {
+    display: inline-block;
+    background-color: #cf0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+   
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dugmepotvrda button:hover {
+    background-color: #9e0a0a;
+  }
+  
+    .odaberikarte {
+        margin-top: 30px; /* Increase the margin as needed */
+        clear: both; /* Add this property to ensure the elements are not floated */
+      
+      
+  }
+
+  #dateInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    outline: none;
+    box-sizing: border-box;
+  }
+  p[name="movie"] {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #cf0000; /* Change to your desired color */
+  }
+    
+  /* CSS for movie title */
+.movie-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #cf0000; /* Red color */
+    margin-bottom: 20px;
+  }
+  
+  /* CSS for date input */
+  .date-input {
+    width: 100%; /* Make the input full width */
+    height: 40px;
+    font-size: 16px;
+    background: #eee;
+    margin-top: 8px;
+  }
+  
+  /* CSS for number input */
+  .number-input {
+    width: 100%; /* Make the input full width */
+    height: 40px;
+    font-size: 16px;
+    background: #eee;
+    margin-top: 8px;
+  }
+  
+  /* CSS for submit button */
+  .submit-button {
+    background-color: #cf0000; /* Red color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #9e0a0a; /* Darker red on hover */
+  }
+  
+  
+  /* Rest of your existing CSS styles */
+  
+  
+  /* Rest of your existing CSS styles */
+  
+  /* Rest of your existing CSS styles */
+
+  
+  
+  
+  
+  
+  

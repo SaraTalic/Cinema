@@ -5,6 +5,31 @@ Author: Templates On Web
 Author URI: http://templateonweb.com/
 Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
 */
+.rezer {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end; /* Align the <ul> to the right */
+  }
+  
+.rezer li {
+	margin-right: 20px;
+}
+  
+.rezer li:last-child {
+	margin-right: 0;
+}
+  
+.rezer li a {
+	text-decoration: none;
+	color: #cf0000;
+	font-weight: bold;
+	transition: color 0.3s ease;
+  }
+  
+.rezer li a:hover {
+	color: #e60000;
+  }
 /*********************center_detail****************/
 .center_detail{
 background:  #151725; 
@@ -51,8 +76,10 @@ margin-top:10px;
 }
 .detail_main_left{
 background:#f4f4f4;
-padding:30px 15px; 
+padding:30px 15px;
+
  }
+
 .heading_tag{
 margin-top:20px;  
   }
@@ -63,6 +90,12 @@ padding-bottom:8px;
 margin-bottom:25px; 
  font-weight:bold; 
   }
+/* Add this CSS code to your existing stylesheet */
+.movie-logo {
+  max-width: 100%; /* Set maximum width to 100% of the parent container */
+  height: 400px; /* Maintain aspect ratio by automatically adjusting the height */
+}
+
 .click_right ul li{
  margin-top:10px; 
   }
@@ -82,7 +115,7 @@ color:#cf0000;
   }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
   font-weight:bold;
-  color:#cf0000!important;
+  color:#cf0000;
   background:#f4f4f4;
   }
 .click{
@@ -232,6 +265,35 @@ color:#999;
 	font-size: 68.5%;
 	font-size:16px;
 }
+/* CSS for "Rezervisi karte" button */
+.digmerez {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.digmerez button a {
+  color: #fff; /* Set link text color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+.digmerez button {
+  background-color: #cf0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.digmerez button:hover {
+  background-color: #e60000;
+}
+
 
 /*---------------*/
 /***** Milo *****/

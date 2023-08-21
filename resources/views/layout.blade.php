@@ -17,14 +17,36 @@
 	<link rel="stylesheet" href="{{asset('css/global.css')}}">
 
 	
-	<link rel="stylesheet" href="{{asset('css/index.css')}}">
+	<link rel="stylesheet" href="{{asset('css/index1.css')}}">
 	<link rel="stylesheet" href="{{asset('css/pages.css')}}">
+	<link rel="stylesheet" href="{{asset('css/login.css')}}">
+	<link rel="stylesheet" href="{{asset('css/register.css')}}">
+	<link rel="stylesheet" href="{{asset('css/mojerez.css')}}">
+	<link rel="stylesheet" href="{{asset('css/booking.css')}}">
 
 	
 	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
 	<script src="/js/jquery-2.1.1.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script>
+        function getNextThursday() {
+            var today = new Date();
+            var daysUntilThursday = (4 - today.getDay() + 7) % 7; // Calculate days until next Thursday
+            var nextThursday = new Date(today);
+            nextThursday.setDate(today.getDate() + daysUntilThursday);
+            return nextThursday;
+        }
+
+        window.onload = function () {
+            var today = new Date();
+            var nextThursday = getNextThursday();
+
+            var dateInput = document.getElementById("dateInput");
+            dateInput.min = today.toISOString().split("T")[0];
+            dateInput.max = nextThursday.toISOString().split("T")[0];
+        };
+    </script>
   </head>
   
 <body>
@@ -42,12 +64,12 @@
 	  <div class="col-sm-9">
 	   <div class="top_2_right text-right">
 		@auth
-		<ul>
+		<ul class="rezer">
 			<li><a href="/mojerezervacije">Moje rezervacije</a></li>
 			<form class="inline" method="POST" action="/logout">
 				@csrf
-				<button type="submit">
-				  <i class="fa-solid fa-door-closed"></i> Odjava
+				<button type="submit" name="odjava">
+				  <p > Odjava </p> 
 				</button>
 			  </form>
 		   </ul>
@@ -67,37 +89,7 @@
  </div>
 </section>
 
-<section id="header" class="clearfix cd-secondary-nav">
- <div class="container">
-  <div class="row">
-   <div class="header_main clearfix">
-     <nav class="navbar navbar-default">
-		   <div class="navbar-header">
-				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">KinoIzKraja <span>od 1999.</span></a>
-	       </div>
-	
-	
-	<div class="collapse navbar-collapse js-navbar-collapse">
-		<ul class="nav navbar-nav navbar-right">
-			<li><a class="font_tag active_tag" href="/">Početna</a></li>
-			<li><a class="font_tag" href="/repertoar">Repertoar</a></li>
-			<li><a class="font_tag" href="/uskoro">Uskoro</a></li>
-			<li><a class="font_tag" href="/cjenovnik">Cjenovnik</a></li>
-			<li><a class="font_tag border_none_1" href="/kontakt">Kontakt</a></li>
-		</ul>
-		
-	</div><!-- /.nav-collapse -->
-</nav>
-   </div>
-  </div>
- </div>
-</section>
+
 
 
 

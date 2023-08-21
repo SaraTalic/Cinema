@@ -143,6 +143,11 @@ padding-bottom:0!important;
 .font_tag:hover{
   color:#cf0000!important;
   }
+.actbr{
+  border:none!important;
+  color:#cf0000!important;
+  font-weight:bold;
+}
 .active_tag{
 color:#cf0000!important;
 font-weight:bold;

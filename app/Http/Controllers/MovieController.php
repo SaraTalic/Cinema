@@ -123,6 +123,22 @@ class MovieController extends Controller
         return view('single',['event' => $event, 'movie' => $m, 'ur' => $ur1 ]);
     }
 
+    public function update(Request $request, Usersreservation $ur){
+
+        //Make sure logged in user is owner
+        if($ur->user_id != auth()->id()){
+            abort(403, 'Unauthorized Action');
+        }
+
+        $formFields = $request->validate([
+            'number_of_tickets' => 'required'
+        ]);
+
+        
+
+
+    }
+
 
 
     

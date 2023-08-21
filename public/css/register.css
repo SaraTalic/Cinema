@@ -1,0 +1,84 @@
+/* Add this CSS to your existing stylesheet */
+
+/* Styling for the register section */
+section[name="registers"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  /* Styling for the form container */
+  .register {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem; /* Adjust as needed */
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .mb-1 {
+    margin-bottom: 0.25rem; /* Adjust as needed */
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* Adjust as needed */
+  }
+  
+  /* Styling for form inputs */
+  .border-gray-200 {
+    border: 1px solid #ccc;
+  }
+  
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  
+  .p-2 {
+    padding: 0.5rem; /* Adjust as needed */
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  /* Styling for error messages */
+  .text-red-500 {
+    color: #e53e3e;
+  }
+  
+  .text-xs {
+    font-size: 0.75rem; /* Adjust as needed */
+    line-height: 1rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* Styling for form submit button */
+  .bg-laravel {
+    background-color: #ff2d20;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .hover\:bg-black:hover {
+    background-color: #000;
+  }
+  
+  /* Styling for the login link */
+  .text-laravel {
+    color: #ff2d20;
+  }
+  

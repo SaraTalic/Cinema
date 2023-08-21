@@ -47,9 +47,6 @@ Route::get('/mojerezervacije', [MovieController::class, 'manage']);
 //Jedna rezervacija
 Route::get('/mojerezervacije/{id}',[MovieController::class,'single']);
 
-//Edit forma rezervacije
-Route::get('/mojerezervacije/{usersreservation}/edit', [MovieController::class, 'edit'])->middleware('auth');
-
 // Update rezervaciju
 Route::put('/mojerezervacije/{usersreservation}', [MovieController::class, 'update'])->middleware('auth');
 

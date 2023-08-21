@@ -1,0 +1,91 @@
+/* Add this CSS to your existing stylesheet */
+
+/* Styling for the table section */
+[name="tabela"] {
+    margin-top: 40px;
+    border: 2px solid #ccc; /* Add border around the tabela section */
+    border-radius: 0.25rem; /* Rounded corners for the border */
+    padding: 20px; /* Add padding to the tabela section */
+  }
+  
+  [name="tabeladiv"] {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  /* Styling for the table */
+  .tabela1 {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Set table layout to fixed */
+  }
+  
+  /* Styling for the main row */
+  .glavna {
+    background-color: #f0f0f0; /* Light gray background for the main row */
+    font-weight: bold; /* Bold text for the main row */
+  }
+  
+  /* Styling for table rows */
+  .row1 {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Styling for table cells */
+  .row2,
+  .row3,
+  .datumrow,
+  .timerow,
+  .glavnarow1,
+  .glavnarow2,
+  .glavnarow3 {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed content */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed content */
+  }
+  
+  /* Styling for links */
+  [name="tabela"] a {
+    color: #ff0000; /* Red color for links in the tabela section */
+    text-decoration: none;
+  }
+  
+  [name="tabela"] a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling for "Izmijeni" link */
+  .izmjena {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .izmjena:hover {
+    color: #0056b3; /* Highlight color on hover */
+  }
+  
+  /* Styling for delete button */
+  .button1 {
+    background: none;
+    border: 2px solid #e53e3e; /* Border color around the button */
+    border-radius: 0.25rem; /* Rounded corners for the button */
+    cursor: pointer;
+    color: inherit;
+    font-size: 1.125rem; /* Larger font size */
+    padding: 10px 20px; /* Adjust padding */
+    transition: color 0.3s;
+  }
+  
+  .button1:hover {
+    color: #e53e3e; /* Highlight color on hover */
+  }
+  
+  /* Styling for icons */
+  .izmjena2,
+  .dugme1 {
+    /* Add your icon styles here */
+  }
+  

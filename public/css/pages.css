@@ -6,9 +6,35 @@ Author URI: http://templateonweb.com/
 Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
 */
 /*********************pages****************/
+/* CSS for "Rezervisi karte" button */
+.dugmerez {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dugmerez button {
+  background-color: #cf0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dugmerez button:hover {
+  background-color: #e60000;
+}
+.dugmerez button a {
+  color: #fff; /* Set link text color to white */
+  text-decoration: none; /* Remove underline */
+}
 .center_pages{
  padding-top:40px;
  padding-bottom:40px;
+ 
    }
 
 .center_pages .topic h1{

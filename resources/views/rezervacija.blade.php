@@ -1,11 +1,42 @@
 @extends('layout')
 
 @section('content')
+<section id="header" class="clearfix cd-secondary-nav">
+  <div class="container">
+   <div class="row">
+    <div class="header_main clearfix">
+      <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                         <span class="sr-only">Toggle navigation</span>
+                                         <span class="icon-bar"></span>
+                                         <span class="icon-bar"></span>
+                                         <span class="icon-bar"></span>
+                                 </button>
+                                 <a class="navbar-brand" href="#">KinoIzKraja <span>od 1999.</span></a>
+                </div>
+         
+         
+         <div class="collapse navbar-collapse js-navbar-collapse">
+                 <ul class="nav navbar-nav navbar-right">
+                         <li><a class="font_tag" href="/">Početna</a></li>
+                         <li><a class="font_tag" href="/repertoar">Repertoar</a></li>
+                         <li><a class="font_tag" href="/uskoro">Uskoro</a></li>
+                         <li><a class="font_tag" href="/cjenovnik">Cjenovnik</a></li>
+                         <li><a class="font_tag border_none_1" href="/kontakt">Kontakt</a></li>
+                 </ul>
+                 
+         </div><!-- /.nav-collapse -->
+ </nav>
+    </div>
+   </div>
+  </div>
+ </section>
 
-<section id="booking">
+<section id="booking1">
     <div class="container">
      <div class="row">
-      <div class="booking clearfix">
+      <div class="booking1 clearfix">
     <div class="col-sm-4">
         <div class="booking_right_main clearfix">
           <div class="booking_right_main_1 clearfix">
@@ -29,23 +60,19 @@
            </div>
            <div class="booking_right_main_2_inner clearfix">
              <p>Odaberite datum</p>
-             <input name="date" type="date" id="date">
-           <div> 
+             <input type="date" id="dateInput" name="dateInput">
+           </div>
+           <div class="odaberikarte"> 
             <p>Odaberite broj karata</p>
             <input name="number_of_tickets" type="number" id="broj">
            </div>
+           <div class="dugmepotvrda">
+
              <button type="submit" id="potvrda">Potvrdi </button>
-            <p class="p_1">Please complete the form above.</p>
+           </div>
            
         </form>
-            <h4>20% DISCOUNT ON BOOKING</h4>
-            <ul class="social-network social-circle">
-                           <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                           <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                           <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                           <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                           <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-           </ul>
+           
            </div>
           </div>
     </div>

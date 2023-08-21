@@ -1,7 +1,37 @@
 @extends('layout')
 
 @section('content')
-
+<section id="header" class="clearfix cd-secondary-nav">
+  <div class="container">
+   <div class="row">
+    <div class="header_main clearfix">
+      <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                         <span class="sr-only">Toggle navigation</span>
+                                         <span class="icon-bar"></span>
+                                         <span class="icon-bar"></span>
+                                         <span class="icon-bar"></span>
+                                 </button>
+                                 <a class="navbar-brand" href="#">KinoIzKraja <span>od 1999.</span></a>
+                </div>
+         
+         
+         <div class="collapse navbar-collapse js-navbar-collapse">
+                 <ul class="nav navbar-nav navbar-right">
+                         <li><a class="font_tag" href="/">Početna</a></li>
+                         <li><a class="font_tag" href="/repertoar">Repertoar</a></li>
+                         <li><a class="font_tag" href="/uskoro">Uskoro</a></li>
+                         <li><a class="font_tag" href="/cjenovnik">Cjenovnik</a></li>
+                         <li><a class="font_tag border_none_1" href="/kontakt">Kontakt</a></li>
+                 </ul>
+                 
+         </div><!-- /.nav-collapse -->
+ </nav>
+    </div>
+   </div>
+  </div>
+ </section>
 <section id="booking">
     <div class="container">
      <div class="row">
@@ -19,40 +49,35 @@
          <p name="movie"> {{$movie->title}} </p>
            <div class="booking_right_main_2_inner clearfix">
              <?php $string = $movie->time; $str_arr = explode (",", $string); ?>
-             <p>Odaberite termin</p>
-             <select name="time" class="form-control">
-                <option> - </option>
+             <p>Termin </p>
+             
                 @foreach($str_arr as $s)
-                <?php if($event->time == $s.':00') { ?> <option selected>{{$s}}</option> <?php }else{?>
+                <?php if($event->time == $s.':00') { ?> <input name="date" class="form-control" type="text" id="vrijeme" value="{{$s}}" readonly> <?php }else{?>
                 
-                 <option >{{$s}}</option>
+                 
                  <?php }?>
                  @endforeach
             </select>
            </div>
            <div class="booking_right_main_2_inner clearfix">
-             <p>Odaberite datum</p>
-             <input name="date" type="date" id="date" value="{{$event->date}}">
-           <div> 
-            <p>Odaberite broj karata</p>
+             <p>Datum </p>
+             <input name="dateInput" type="date" id="dateInput" value="{{$event->date}}" readonly>
+           </div>
+           <div class="odaberikarte"> 
+            <p> Broj karata</p>
             <input name="number_of_tickets" type="number" id="broj" value="{{$ur->number_of_tickets}}">
            </div>
+           <div class="dugmepotvrda">
              <button type="submit" id="izmjena"> Izmijeni </button>
-             <button type="submit" id="obrisi"> Obrisi </button>
-            <p class="p_1">Please complete the form above.</p>
+             <button type="submit" id="obrisi"> Otkaži </button>
+           </div>
+            <p class="p_1">*Izmijeniti možete samo broj karata.</p>
            
         </form>
-            <h4>20% DISCOUNT ON BOOKING</h4>
-            <ul class="social-network social-circle">
-                           <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                           <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                           <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                           <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                           <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-           </ul>
+            
            </div>
           </div>
-    </div>
+    
       </div>
      </div>
 </section>
