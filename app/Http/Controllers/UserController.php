@@ -8,14 +8,14 @@ use Illuminate\Validation\Rule;
 
 class UserController extends Controller
 {
-    //
     
-    // Show Register/Create Form
+    
+    //Prikaz Registracije
     public function create() {
         return view('users.register');
     }
 
-    // Create New User
+    //Kreiranje Novog Korisnika
     public function store(Request $request) {
         $formFields = $request->validate([
             'name' => ['required', 'min:3'],
@@ -32,26 +32,26 @@ class UserController extends Controller
         // Login
         auth()->login($user);
 
-        return redirect('/')->with('message', 'User created and logged in');
+        return redirect('/')->with('message', 'Uspješno ste se registrovali!');
     }
 
-    // Logout User
+    //Odjava Korisnika
     public function logout(Request $request) {
         auth()->logout();
 
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/')->with('message', 'You have been logged out!');
+        return redirect('/')->with('message', 'Prijavljeni ste!');
 
     }
 
-    // Show Login Form
+    //Prikaz Prijave
     public function login() {
         return view('users.login');
     }
 
-    // Authenticate User
+    //Potvrda Korisnika
     public function authenticate(Request $request) {
         $formFields = $request->validate([
             'email' => ['required', 'email'],
@@ -61,7 +61,7 @@ class UserController extends Controller
         if(auth()->attempt($formFields)) {
             $request->session()->regenerate();
 
-            return redirect('/')->with('message', 'You are now logged in!');
+            return redirect('/')->with('message', 'Odjavili ste se.');
         }
 
         return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput('email');

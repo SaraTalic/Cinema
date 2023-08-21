@@ -5,16 +5,6 @@ use App\Http\Controllers\MovieController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\UserController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 //Pocetna
 Route::get('/', [MovieController::class, 'index']);
@@ -23,49 +13,46 @@ Route::get('/', [MovieController::class, 'index']);
 Route::get('/movies/{movie}', [MovieController::class, 'show']);
 
 //Repertoar
-Route::get('/repertoar',[MovieController::class,'repertoar']);
+Route::get('/repertoar', [MovieController::class, 'repertoar']);
 
 //Uskoro
-Route::get('/uskoro',[MovieController::class,'uskoro']);
+Route::get('/uskoro', [MovieController::class, 'uskoro']);
 
 //Cjenovnik
-Route::get('/cjenovnik',[MovieController::class,'cjenovnik']);
-
-//Rezervacija
-Route::get('/movies/{movie}/rezervacija',[MovieController::class,'rezervacija']);
-
-//Potvrda rezervacije
-
-Route::post('/movies/{movie}/rezervacija', [MovieController::class, 'storeReservation']);
+Route::get('/cjenovnik', [MovieController::class, 'cjenovnik']);
 
 //Kontakt
-Route::get('/kontakt',[Controller::class,'kontakt']);
+Route::get('/kontakt', [Controller::class, 'kontakt']);
+
+//Rezervacija
+Route::get('/movies/{movie}/rezervacija', [MovieController::class, 'rezervacija'])->middleware('auth');
+
+//Potvrda rezervacije
+Route::post('/movies/{movie}/rezervacija', [MovieController::class, 'storeReservation'])->middleware('auth');
 
 //Moje rezervacije
-Route::get('/mojerezervacije', [MovieController::class, 'manage']);
+Route::get('/mojerezervacije', [MovieController::class, 'manage'])->middleware('auth');
 
 //Jedna rezervacija
-Route::get('/mojerezervacije/{id}',[MovieController::class,'single']);
+Route::get('/mojerezervacije/{id}', [MovieController::class, 'single'])->middleware('auth');
 
-// Update rezervaciju
+//Update rezervaciju
 Route::put('/mojerezervacije/{usersreservation}', [MovieController::class, 'update'])->middleware('auth');
 
-// Delete rezervaciju
+//Delete rezervaciju
 Route::delete('/mojerezervacije/{usersreservation}', [MovieController::class, 'destroy'])->middleware('auth');
 
-// Show Register/Create Form
-Route::get('/register', [UserController::class, 'create']);
+//Registracija
+Route::get('/register', [UserController::class, 'create'])->middleware('guest');
 
-// Create New User
-Route::post('/users', [UserController::class, 'store']);
+//Kreiraj korisnika
+Route::post('/users', [UserController::class, 'store'])->middleware('guest');
 
-// Log User Out
-Route::post('/logout', [UserController::class, 'logout']);
+//Odjavi se
+Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
 
-// Show Login Form
-Route::get('/login', [UserController::class, 'login']);
+//Login
+Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
 
-// Log In User
+//Uloguj korisnika
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
-
-
