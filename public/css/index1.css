@@ -6,6 +6,70 @@ Author URI: http://templateonweb.com/
 Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
 */
 /*********************center****************/
+
+#pocetna {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.nav1 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav1 li {
+    margin-right: 20px;
+}
+
+.nav1 li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.tab-content {
+    padding-top: 20px;
+}
+
+/* Styles for movie cards */
+.movie-card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.movie-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-card p {
+    font-size: 14px;
+    color: #888;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-default .navbar-brand {
+        font-size: 20px;
+    }
+    
+    .nav1 li {
+        margin-right: 10px;
+    }
+    
+    .movie-card {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
 .rezer {
 	list-style: none;
 	display: flex;

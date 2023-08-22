@@ -45,7 +45,7 @@
                                     <li class="pull-right"><a href="#"><i class="fa fa-ticket"></i></a></li>
                                 </ul>
                             </div>
-                            <form method="POST" action="/movies/{{ $movie->id }}/rezervacija" class="appointment-form">
+                            <form method="POST" action="/mojerezervacije/{{ $ur->id }}" class="appointment-form">
                                 @csrf
                                 <p name="movie"> {{ $movie->title }} </p>
                                 <div class="booking_right_main_2_inner clearfix">
@@ -54,7 +54,7 @@
                                     <p>Termin </p>
 
                                     @foreach ($str_arr as $s)
-                                        <?php if($event->time == $s.':00') { ?> <input name="date" class="form-control" type="text"
+                                        <?php if($event->time == $s.':00') { ?> <input name="time" class="form-control" type="text"
                                             id="vrijeme" value="{{ $s }}" readonly> <?php }else{?>
 
 
@@ -67,18 +67,28 @@
                                     <input name="dateInput" type="date" id="dateInput" value="{{ $event->date }}"
                                         readonly>
                                 </div>
-                                <div class="odaberikarte">
-                                    <p> Broj karata</p>
-                                    <input name="number_of_tickets" type="number" id="broj"
-                                        value="{{ $ur->number_of_tickets }}">
-                                </div>
-                                <div class="dugmepotvrda">
-                                    <button type="submit" id="izmjena"> Izmijeni </button>
-                                    <button type="submit" id="obrisi"> Otkaži </button>
-                                </div>
-                                <p class="p_1">*Izmijeniti možete samo broj karata.</p>
+                                <form method="POST" action="/mojerezervacije/{{ $ur->id }}"
+                                    enctype="multipart/form-data">
+                                    @csrf
+                                    @method('PUT')
+                                    <div class="mb-6">
+                                        <label for="number_of_tickets" class="inline-block text-lg mb-2">Broj karata</label>
+                                        <input type="number" class="border border-gray-200 rounded p-2 w-full"
+                                            name="number_of_tickets" value="{{ $ur->number_of_tickets }}" />
 
-                            </form>
+                                        @error('not')
+                                            <p class="text-red-500">{{ $message }}</p>
+                                        @enderror
+                                    </div>
+
+                                    <div class="dugmepotvrda">
+                                        <button id="submit" type="submit"> Izmijeni </button>
+
+
+                                    </div>
+                                    <p class="p_1">*Izmijeniti možete samo broj karata.</p>
+
+                                </form>
 
                         </div>
                     </div>

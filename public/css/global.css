@@ -98,8 +98,23 @@ margin:0;
 .top_2_right ul li a:hover{
   color:#eee;
   }
+.text-red{
+  color:#cf0000;
+}
 /*********************top_end****************/
+.footer2-1 {
+  display: flex;
+  align-items: center;
+}
 
+.footer2 {
+  margin-left: 30px;
+}
+
+.footer2 h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 /*********************header****************/
 .navbar{
   border:none;

@@ -12,8 +12,6 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function kontakt() {
-        return view('kontakt');
-    }
-   
+
+
 }

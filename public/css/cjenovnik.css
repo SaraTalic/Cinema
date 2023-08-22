@@ -1,0 +1,108 @@
+/* Styling for the cjenovnik section */
+#cjenovnik {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.detail_main_right_2 {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detail_main_right_2 h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.detail_main_right_2 ul {
+    list-style: none;
+}
+
+.detail_main_right_2 li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.tag_1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tag_2 {
+    font-size: 24px;
+    color: #ff5500;
+}
+
+.tag_3 {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .detail_main_right_2 {
+        padding: 10px;
+    }
+
+    .detail_main_right_2 h3 {
+        font-size: 24px;
+    }
+
+    .tag_1 {
+        font-size: 16px;
+    }
+
+    .tag_2 {
+        font-size: 20px;
+    }
+
+    .tag_3 {
+        font-size: 12px;
+    }
+}
+
+/* Ostatak postojećeg CSS koda */
+
+/* Stilizacija menija sa slikama */
+/* Ostatak postojećeg CSS koda */
+
+/* Stilizacija menija sa slikama */
+.menu_items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.menu_item {
+    width: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu_item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.menu_item h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.menu_item p {
+    font-size: 14px;
+    color: #888;
+}

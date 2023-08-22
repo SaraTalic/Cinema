@@ -69,31 +69,47 @@
     <section id="contact_last">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="contact_last_1 clearfix">
-                        <h2>Piši nam</h2>
-                        <p>Ime</p>
-                        <input class="form-control" placeholder="Unesite Vaše ime" type="text">
-                        <p>Email</p>
-                        <input class="form-control" placeholder="Unesite Vaš email" type="text">
-                        <div class="contact_last_1_inner clearfix">
-
-                            <div class="col-sm-6 space_left">
-                                <p>Tip pitanja</p>
-                                <select class="form-control">
-                                    <option>Odaberi tip pitanja</option>
-                                    <option>Pitanje o repertoaru</option>
-                                    <option>Biznis pitanje</option>
-                                    <option>Pitanje o rezervacijama</option>
-                                    <option>Donacije</option>
-                                    <option>Ostalo</option>
-                                </select>
-                            </div>
-                        </div>
-                        <p>Tvoja poruka</p>
-                        <textarea class="form-control form_1"></textarea>
-                        <input class="submit_button" type="submit" name="submit" value="POŠALJI">
+                @if (Session::has('message'))
+                    <div class="alert alert-success">
+                        {{ Session::get('message') }}
                     </div>
+                @endif
+                <div class="col-sm-12">
+                    <form method="POST" action="/kontakt" id="contactUSForm">
+                        @csrf
+                        <div class="contact_last_1 clearfix">
+                            <h2>Piši nam</h2>
+                            <p>Ime</p>
+                            <input class="form-control" placeholder="Unesite Vaše ime" type="text" name="name">
+                            @if ($errors->has('name'))
+                                <span class="text-danger">{{ $errors->first('name') }}</span>
+                            @endif
+                            <p>Email</p>
+                            <input class="form-control" placeholder="Unesite Vaš email" type="text" name="email">
+                            <div class="contact_last_1_inner clearfix">
+                                @if ($errors->has('email'))
+                                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
+
+                                <div class="col-sm-6 space_left">
+                                    <p>Tip pitanja</p>
+                                    <select name="subject" class="form-control">
+                                        <option>Odaberi tip pitanja</option>
+                                        <option>Pitanje o repertoaru</option>
+                                        <option>Biznis pitanje</option>
+                                        <option>Pitanje o rezervacijama</option>
+                                        <option>Donacije</option>
+                                        <option>Ostalo</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <p>Tvoja poruka</p>
+                            <textarea name="message" class="form-control form_1"></textarea>
+                            @if ($errors->has('message'))
+                                <span class="text-danger">{{ $errors->first('message') }}</span>
+                            @endif
+                            <input class="submit_button" type="submit" name="submit" value="POŠALJI">
+                        </div>
                 </div>
             </div>
         </div>

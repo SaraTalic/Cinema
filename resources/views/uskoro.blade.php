@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-
     <section id="header" class="clearfix cd-secondary-nav">
         <div class="container">
             <div class="row">
@@ -34,7 +33,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="center" class="center_events clearfix">
         <div class="center_events_main text-center clearfix">
             <div class="container">

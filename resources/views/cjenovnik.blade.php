@@ -33,17 +33,37 @@
             </div>
         </div>
     </section>
-    <div class="detail_main_right_2 clearfix">
-        <h3>CJENOVNIK</h3>
+    <section id="cjenovnik">
+        <div class="detail_main_right_2 clearfix">
+            <h3>CJENOVNIK</h3>
 
-        <ul>
-            <li><span class="tag_1">Poslijepodne</span> <br><span class="tag_2">£4.00</span><br> <span
-                    class="tag_3">Prije 17h</span></li>
-            <li><span class="tag_1">Večernje</span> <br><span class="tag_2">£5.00</span><br> <span class="tag_3">Poslije
-                    17h</span></li>
-            <li><span class="tag_1">Utorak</span> <br><span class="tag_2">£3.00</span><br> <span class="tag_3">Dan za
-                    kino</span></li>
+            <ul>
+                <li><span class="tag_1">Poslijepodne</span> <br><span class="tag_2">4.00 KM</span><br> <span
+                        class="tag_3">Prije 17h</span></li>
+                <li><span class="tag_1">Večernje</span> <br><span class="tag_2">5.00 KM</span><br> <span
+                        class="tag_3">Poslije
+                        17h</span></li>
+                <li><span class="tag_1">Utorak</span> <br><span class="tag_2">3.00 KM</span><br> <span class="tag_3">Dan
+                        za
+                        kino</span></li>
 
-        </ul>
-    </div>
+            </ul>
+
+
+        </div>
+        <div class="menu_items clearfix">
+            <div class="menu_item">
+                <img src="images/kokice.png" alt="Kokice">
+                <h4>Kokice</h4>
+                <p>Srednje - 4.00 KM</p>
+                <p>Velike - 6.00 KM</p>
+            </div>
+            <div class="menu_item">
+                <img src="images/nacos.png" alt="Kokice">
+                <h4>Naćosi</h4>
+                <p>Srednji - 4.00 KM</p>
+                <p>Veliki - 5.00 KM</p>
+            </div>
+        </div>
+    </section>
 @endsection

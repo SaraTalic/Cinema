@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ContactController;
 
 
 //Pocetna
@@ -22,7 +23,14 @@ Route::get('/uskoro', [MovieController::class, 'uskoro']);
 Route::get('/cjenovnik', [MovieController::class, 'cjenovnik']);
 
 //Kontakt
-Route::get('/kontakt', [Controller::class, 'kontakt']);
+Route::get('/kontakt', [ContactController::class, 'kontakt']);
+
+//Slanje mejla
+Route::post('/kontakt', [ContactController::class, 'store']);
+
+//Pretraga
+Route::get('/pretraga', [MovieController::class, 'search']);
+
 
 //Rezervacija
 Route::get('/movies/{movie}/rezervacija', [MovieController::class, 'rezervacija'])->middleware('auth');
@@ -37,10 +45,10 @@ Route::get('/mojerezervacije', [MovieController::class, 'manage'])->middleware('
 Route::get('/mojerezervacije/{id}', [MovieController::class, 'single'])->middleware('auth');
 
 //Update rezervaciju
-Route::put('/mojerezervacije/{usersreservation}', [MovieController::class, 'update'])->middleware('auth');
+Route::put('/mojerezervacije/{id}/', [MovieController::class, 'update'])->middleware('auth');
 
 //Delete rezervaciju
-Route::delete('/mojerezervacije/{usersreservation}', [MovieController::class, 'destroy'])->middleware('auth');
+Route::delete('/mojerezervacije/{id}', [MovieController::class, 'destroy'])->middleware('auth');
 
 //Registracija
 Route::get('/register', [UserController::class, 'create'])->middleware('guest');

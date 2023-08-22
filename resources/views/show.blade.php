@@ -98,11 +98,16 @@
                                 <div id="home" class="tab-pane fade in active clearfix">
                                     <div class="click clearfix">
                                         <h4><a href="#">TERMINI </a></h4>
-                                        <div class="digmerez">
-                                            <button name="rezervisi"><a href="/movies/{{ $movie->id }}/rezervacija">
-                                                    Rezervisi karte </a> </button>
-                                        </div>
-                                        <p> {{ $movie->time }} </p>
+
+                                        @if ($movie->on_air == 'yes')
+                                            <div class="digmerez">
+                                                <button name="rezervisi"><a href="/movies/{{ $movie->id }}/rezervacija">
+                                                        Rezervisi karte </a> </button>
+                                            </div>
+                                            <p> {{ $movie->time }} </p>
+                                        @else
+                                            <p> Uskoro </p>
+                                        @endif
 
                                     </div>
 
@@ -188,7 +193,8 @@
 
                             <ul>
                                 <li><span class="tag_1">Poslijepodne</span> <br><span class="tag_2">£4.00</span><br>
-                                    <span class="tag_3">Prije 17h</span></li>
+                                    <span class="tag_3">Prije 17h</span>
+                                </li>
                                 <li><span class="tag_1">Večernje</span> <br><span class="tag_2">£5.00</span><br> <span
                                         class="tag_3">Poslije 17h</span></li>
                                 <li><span class="tag_1">Utorak</span> <br><span class="tag_2">£3.00</span><br> <span
@@ -212,6 +218,10 @@
                         </div>
                     @endif
                 @endforeach
+
+            </div>
+            <div class="mt-6 p-4">
+                {{ $movies->links() }}
             </div>
     </section>
 @endsection

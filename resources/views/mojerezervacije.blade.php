@@ -81,11 +81,11 @@
                                 <td class="timerow"> <label>{{ $event->time }} </label>
                                 </td>
                                 <td class="row2">
-                                    <a href="/mojerezervacije/{{ $event->id }}/edit" class="izmjena"><i class="izmjena2"></i>
+                                    <a href="/mojerezervacije/{{ $us->id }}" class="izmjena"><i class="izmjena2"></i>
                                         Izmijeni</a>
                                 </td>
                                 <td class="row3">
-                                    <form method="POST" action="/mojerezervacije/{{ $event->id }}">
+                                    <form method="POST" action="/mojerezervacije/{{ $us->id }}">
                                         @csrf
                                         @method('DELETE')
                                         <button class="button1"><i class="dugme1"></i> Obriši</button>

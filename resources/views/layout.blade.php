@@ -6,21 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KinoIzKraja</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
 
 
-    
-	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
     <link rel="stylesheet" href="{{ asset('css/detail.css') }}">
     <link rel="stylesheet" href="{{ asset('css/events.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/index1.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/index1.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages.css') }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
     <link rel="stylesheet" href="{{ asset('css/register.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mojerez.css') }}">
     <link rel="stylesheet" href="{{ asset('css/booking.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/cjenovnik.css') }}">
 
 
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
@@ -48,7 +50,7 @@
 </head>
 
 <body>
-	<x-flash-message />
+    <x-flash-message />
     <section id="top">
         <div class="container">
             <div class="row">
@@ -83,7 +85,7 @@
             </div>
         </div>
         </div>
-		
+
     </section>
 
 
@@ -107,34 +109,58 @@
 
                             <ul>
                                 <li><a href="#">POČETNA</a></li>
-                                <li><a href="#">REPERTOAR</a></li>
-                                <li><a href="#">USKORO</a></li>
-                                <li><a href="#">CJENOVNIK</a></li>
-                                <li><a href="#">REZERVACIJA</a></li>
-                                <li><a href="#">KONTAKT</a></li>
+                                <li><a href="/repertoar">REPERTOAR</a></li>
+                                <li><a href="/uskoro">USKORO</a></li>
+                                <li><a href="/cjenovnik">CJENOVNIK</a></li>
+                                <li><a href="/kontakt">KONTAKT</a></li>
                             </ul>
                         </div>
                     </div>
+                    <div class="footer_1 clearfix">
+                        <div class="col-sm-3">
+                            <div class="footer_1_inner">
 
-                    <div class="col-sm-3">
-                        <div class="footer_1_inner_1">
-                            <h4>Zaprati nas</h4>
-                            <ul class="social-network social-circle">
-                                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                                <li><a href="#" class="icoFacebook" title="Facebook"><i
-                                            class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="icoTwitter" title="Twitter"><i
-                                            class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="icoGoogle" title="Google +"><i
-                                            class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                            </ul>
+                                <!-- ... existing content ... -->
+
+                                <!-- Add the search bar here -->
+                                <div class="search-bar">
+                                    <form action="/pretraga" method="GET" class="search-form">
+                                        <input type="text" name="query" placeholder="Search movies...">
+                                        <button type="submit">Search</button>
+                                    </form>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="footer_1_inner">
+
+                                <p>-------</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="footer_1_inner_1">
+                                <h4>Zaprati nas</h4>
+                                <ul class="social-network social-circle">
+                                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a>
+                                    </li>
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" class="icoGoogle" title="Google +"><i
+                                                class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i
+                                                class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="footer_bottom">

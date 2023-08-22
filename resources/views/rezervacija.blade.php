@@ -48,6 +48,7 @@
                             </div>
                             <form method="POST" action="/movies/{{ $movie->id }}/rezervacija" class="appointment-form">
                                 @csrf
+                                @method('POST')
                                 <p name="movie"> {{ $movie->title }} </p>
                                 <div class="booking_right_main_2_inner clearfix">
                                     <?php $string = $movie->time;
@@ -67,6 +68,9 @@
                                 <div class="odaberikarte">
                                     <p>Odaberite broj karata</p>
                                     <input name="number_of_tickets" type="number" id="broj">
+                                    @error('not')
+                                        <p class="text-red-500">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div class="dugmepotvrda">
 

@@ -104,6 +104,10 @@
                     @endforeach
 
                 </div>
+                <div class="mt-10 p-3">
+                    <p>
+                        {{ $movies->links() }}</p>
+                </div>
             </div>
         </div>
     </section>

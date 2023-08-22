@@ -48,13 +48,16 @@
     </section>
 
 
-    <section id="booking">
+
+
+
+    <section id="pocetna">
         <div class="container">
             <div class="row">
-                <div class="booking clearfix">
+                <div class="pocetna clearfix">
                     <div class="col-sm-8">
-                        <div class="booking_left_main clearfix">
-                            <ul class="nav nav-tabs">
+                        <div class="pocetna clearfix">
+                            <ul class="nav1 nav-tabs">
                                 <li class="active"><a data-toggle="tab" href="#home">REPERTOAR</a></li>
                                 <li><a data-toggle="tab" href="#menu1">POPULARNO</a></li>
                                 <li><a data-toggle="tab" href="#menu2">USKORO</a></li>
@@ -78,7 +81,9 @@
                                 </div>
                                 <div id="menu1" class="tab-pane fade clearfix">
                                     <div class="click clearfix">
-
+                                        <div class="click_1 clearfix">
+                                            <h3> <a class="pull-right" href="#"> KinoIzKraja</a></h3>
+                                        </div>
                                         <div class="click_2 clearfix">
 
                                             @foreach ($movies as $movie)
@@ -91,6 +96,9 @@
                                     </div>
                                 </div>
                                 <div id="menu2" class="tab-pane fade in active clearfix">
+                                    <div class="click_1 clearfix">
+                                        <h3> <a class="pull-right" href="#"> KinoIzKraja</a></h3>
+                                    </div>
                                     <div class="click clearfix">
 
                                         <div class="click_2 clearfix">
