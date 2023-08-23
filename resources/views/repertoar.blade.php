@@ -71,15 +71,26 @@
                                                         <h2><a href="/movies/{{ $movie->id }}">{{ $movie->title }}</a>
                                                         </h2>
 
-                                                        <h6>Action, Comedy, Drama</h6>
-                                                        <p class="para_1">{{ $movie->description }}<a
-                                                                href="/movies/{{ $movie->id }}">Vise </a></p>
+                                                        <h6>
+                                                            <?php foreach ($mgs as $mg) {
+                                                                if ($mg->movie_id == $movie->id) {
+                                                                    foreach ($genres as $genre) {
+                                                                        if ($genre->id == $mg->genre_id) {
+                                                                            echo $genre->name . ' ';
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            ?>
+                                                        </h6>
+                                                        <p class="para_1">{{ $movie->small_description }}<a
+                                                                href="/movies/{{ $movie->id }}"> Više </a></p>
 
                                                         <p class="para_2"><span>Glumci:</span> {{ $movie->actors }}</p>
                                                     </div>
                                                     <div class="dugmerez">
                                                         <button name="rezervisi"><a
-                                                                href="/movies/{{ $movie->id }}/rezervacija"> Rezervisi
+                                                                href="/movies/{{ $movie->id }}/rezervacija"> Rezerviši
                                                                 karte </a> </button>
                                                     </div>
                                                 </div>
@@ -91,7 +102,18 @@
                                                 <ul>
                                                     <li><i class="fa fa-backward"></i> {{ $movie->title }}</li>
                                                     <li><i class="fa fa-clock-o"></i> {{ $movie->duration }} min</li>
-                                                    <li><i class="fa fa-list"></i> Action, Comedy, Drama</li>
+                                                    <li><i class="fa fa-list"></i>
+                                                        <?php foreach ($mgs as $mg) {
+                                                            if ($mg->movie_id == $movie->id) {
+                                                                foreach ($genres as $genre) {
+                                                                    if ($genre->id == $mg->genre_id) {
+                                                                        echo $genre->name . ' ';
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        ?>
+                                                    </li>
                                                     <li><i class="fa fa-image"></i> {{ $movie->director }}</li>
                                                     <li><i class="fa fa-star"></i> {{ $movie->actors }}</li>
 

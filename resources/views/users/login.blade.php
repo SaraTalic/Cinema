@@ -36,7 +36,7 @@
     <section name="logins">
         <div class="text-center">
             <h2 class="text-2xl font-bold uppercase mb-1">Prijava</h2>
-            <p class="mb-4">Prijavi se i ostvari popust na rezervacije</p>
+            <p class="mb-4">Prijavi se i rezerviši svoja mjesta na vrijeme!</p>
         </div>
 
         <form method="POST" action="/users/authenticate">

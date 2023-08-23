@@ -119,14 +119,11 @@
                     <div class="footer_1 clearfix">
                         <div class="col-sm-3">
                             <div class="footer_1_inner">
-
-                                <!-- ... existing content ... -->
-
-                                <!-- Add the search bar here -->
                                 <div class="search-bar">
+                                    <p>------</p>
                                     <form action="/pretraga" method="GET" class="search-form">
-                                        <input type="text" name="query" placeholder="Search movies...">
-                                        <button type="submit">Search</button>
+                                        <input type="text" name="search" placeholder="Pretraži filmove...">
+                                        <button type="submit">Pretraži</button>
                                     </form>
                                 </div>
 
@@ -170,8 +167,10 @@
 
                     <div class="col-sm-6">
                         <div class="footer_bottom_right">
-                            <p> © 2023 KinoIzKraja. Sva prava zadržana | Design by <a
-                                    href="http://www.templateonweb.com"> MADE BY SARA</a></p>
+                            <p> © 2023 KinoIzKraja. Sva prava zadržana | Made by <a
+                                    href="https://github.com/SaraTalic"> SARA</a></p>
+                            <p>Projekat iz predmeta Internet programiranje</p>
+                            <p>Avgust 2023.</p>
                         </div>
                     </div>
                 </div>

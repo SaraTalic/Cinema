@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\MovieController;
-use App\Http\Controllers\Controller;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
 
@@ -30,7 +30,6 @@ Route::post('/kontakt', [ContactController::class, 'store']);
 
 //Pretraga
 Route::get('/pretraga', [MovieController::class, 'search']);
-
 
 //Rezervacija
 Route::get('/movies/{movie}/rezervacija', [MovieController::class, 'rezervacija'])->middleware('auth');

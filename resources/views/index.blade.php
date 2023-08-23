@@ -118,4 +118,54 @@
 
 
     </section>
+    <section id="booking_last">
+        <div class="container">
+            <div class="row">
+                <div class="booking_last clearfix">
+                    <div class="col-sm-4">
+                        <div class="booking_right_main_3 clearfix">
+                            <div class="grid">
+                                <figure class="effect-milo">
+                                    <img src="images/kum.jpg" alt="img03" width="100%" height="415x">
+                                    <figcaption>
+                                        <h2>Kino<span>IzKraja</span></h2>
+                                        <p></p>
+                                        <a href="#"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="booking_right_main_3 clearfix">
+                            <div class="grid">
+                                <figure class="effect-milo">
+                                    <img src="images/sw.jpg" alt="img03" width="100%" height="415px">
+                                    <figcaption>
+                                        <h2>Kino<span>IzKraja</span></h2>
+                                        <p></p>
+                                        <a href="#"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="booking_right_main_3 clearfix">
+                            <div class="grid">
+                                <figure class="effect-milo">
+                                    <img src="images/pulp.jpg" alt="img03" width="100%" height="415px">
+                                    <figcaption>
+                                        <h2>Kino<span>IzKraja</span></h2>
+                                        <p></p>
+                                        <a href="#"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      *
@@ -20,9 +19,11 @@ return new class extends Migration
             $table->string('actors');
             $table->string('director');
             $table->string('logo');
-            $table->enum('on_air',['yes','no']);
-            $table->enum('trending',['yes','no']);
+            $table->date('premiere');
+            $table->enum('on_air', ['yes', 'no']);
+            $table->enum('trending', ['yes', 'no']);
             $table->longText('description');
+            $table->longText('small_description');
             $table->string('time')->nullable();
             $table->timestamps();
         });

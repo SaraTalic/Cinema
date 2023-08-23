@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      *
@@ -19,7 +18,8 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Schema::create('movie_genre', function (Blueprint $table) {
+        Schema::create('moviegenres', function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger('movie_id');
             $table->unsignedBigInteger('genre_id');
             $table->foreign('movie_id')

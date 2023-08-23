@@ -6,16 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Movie;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Genre extends Model
 {
     use HasFactory;
 
+    //Veza vise-vise movie-genre
     public function movies()
     {
-        return $this->belongsToMany(Movie::class, 'movie_genre');
+        return $this->belongsToMany(Movie::class, 'moviegenres');
     }
 }

@@ -75,17 +75,18 @@
                             <div class="click_right clearfix">
                                 <h4>Informacije</h4>
                                 <ul>
-                                    <li><i class="fa fa-backward"></i> Integer nec odio</li>
+
                                     <li><i class="fa fa-clock-o"></i> {{ $movie->duration }} min</li>
-                                    <li><i class="fa fa-list"></i> Action, Comedy, Drama</li>
-                                    <li><i class="fa fa-image"></i> Nibh Elementum</li>
+                                    <li><i class="fa fa-list"></i> {{ $genres }}</li>
+                                    <li>Premijera: {{ $movie->premiere }}</li>
+                                    <li><i class="fa fa-image"></i> {{ $movie->director }}</li>
                                     <li><i class="fa fa-star"></i> {{ $movie->actors }}</li>
                                 </ul>
                             </div>
                             <div class="click_right clearfix">
                                 <h4 class="heading_tag">Opis</h4>
                                 <ul>
-                                    <li><i class="fa fa-user"></i>{{ $movie->description }}</li>
+                                    <li><i class="fa fa-user"></i>{{ $movie->small_description }}</li>
                                 </ul>
                             </div>
                         </div>
@@ -102,7 +103,7 @@
                                         @if ($movie->on_air == 'yes')
                                             <div class="digmerez">
                                                 <button name="rezervisi"><a href="/movies/{{ $movie->id }}/rezervacija">
-                                                        Rezervisi karte </a> </button>
+                                                        Rezerviši karte </a> </button>
                                             </div>
                                             <p> {{ $movie->time }} </p>
                                         @else
@@ -192,12 +193,12 @@
                             <h3>CJENOVNIK</h3>
 
                             <ul>
-                                <li><span class="tag_1">Poslijepodne</span> <br><span class="tag_2">£4.00</span><br>
+                                <li><span class="tag_1">Poslijepodne</span> <br><span class="tag_2">4.00 KM</span><br>
                                     <span class="tag_3">Prije 17h</span>
                                 </li>
-                                <li><span class="tag_1">Večernje</span> <br><span class="tag_2">£5.00</span><br> <span
+                                <li><span class="tag_1">Večernje</span> <br><span class="tag_2">5.00 KM</span><br> <span
                                         class="tag_3">Poslije 17h</span></li>
-                                <li><span class="tag_1">Utorak</span> <br><span class="tag_2">£3.00</span><br> <span
+                                <li><span class="tag_1">Utorak</span> <br><span class="tag_2">3.00 KM</span><br> <span
                                         class="tag_3">Dan za kino</span></li>
 
                             </ul>

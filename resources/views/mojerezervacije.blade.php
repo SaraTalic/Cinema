@@ -81,15 +81,27 @@
                                 <td class="timerow"> <label>{{ $event->time }} </label>
                                 </td>
                                 <td class="row2">
-                                    <a href="/mojerezervacije/{{ $us->id }}" class="izmjena"><i class="izmjena2"></i>
-                                        Izmijeni</a>
+                                    @foreach ($usersreservations as $us)
+                                        @if ($event->id == $us->event_id && auth()->id() == $us->user_id)
+                                            <a href="/mojerezervacije/{{ $us->id }}" class="izmjena"><i
+                                                    class="izmjena2"></i>
+                                                Izmijeni</a>
+                                        @endif
+                                    @endforeach
+
                                 </td>
                                 <td class="row3">
-                                    <form method="POST" action="/mojerezervacije/{{ $us->id }}">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button class="button1"><i class="dugme1"></i> Obriši</button>
-                                    </form>
+                                    @foreach ($usersreservations as $us)
+                                        @if ($event->id == $us->event_id && auth()->id() == $us->user_id)
+                                            <form method="POST" action="/mojerezervacije/{{ $us->id }}">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button class="button1"><i class="dugme1"></i> Obriši</button>
+                                            </form>
+                                        @endif
+                                    @endforeach
+
+
                                 </td>
                             </tr>
                         @endforeach

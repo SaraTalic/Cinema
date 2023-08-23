@@ -72,13 +72,19 @@
                                     @csrf
                                     @method('PUT')
                                     <div class="mb-6">
-                                        <label for="number_of_tickets" class="inline-block text-lg mb-2">Broj karata</label>
+                                        <p>Broj karata </p>
                                         <input type="number" class="border border-gray-200 rounded p-2 w-full"
                                             name="number_of_tickets" value="{{ $ur->number_of_tickets }}" />
 
                                         @error('not')
                                             <p class="text-red-500">{{ $message }}</p>
                                         @enderror
+                                    </div>
+                                    <div class="booking_right_main_2_inner clearfix">
+                                        <p>Cijena </p>
+                                        <input name="total_price" type="text"
+                                            class="border border-gray-200 rounded p-2 w-full" id="total_price"
+                                            value="<?php echo $ur->total_price . '.00 KM'; ?>" readonly>
                                     </div>
 
                                     <div class="dugmepotvrda">
