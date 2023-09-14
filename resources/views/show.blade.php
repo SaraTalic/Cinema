@@ -212,9 +212,9 @@
                     @if ($m->on_air == 'yes')
                         <div class="col-sm-3 space_left">
                             <div class="detail_main_right_1_inner_1 clearfix">
-                                <a href="#"><img src="/images/{{ $m->logo }}" width="90%"
+                                <a href="/movies/{{$m->id}}"><img src="/images/{{ $m->logo }}" width="90%"
                                         height="300px"></a>
-                                <p class="text-center"><a href="#">{{ $m->title }}</a></p>
+                                <p class="text-center"><a href="/movies/{{$m->id}}">{{ $m->title }}</a></p>
                             </div>
                         </div>
                     @endif

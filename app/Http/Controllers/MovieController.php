@@ -102,7 +102,7 @@ class MovieController extends Controller
         $events = Event::all();
         $formFields['time'] = $formFields['time'] . ':00';
         $usersres = Usersreservation::all();
-
+        //dodati vrijeme uslov
         foreach ($events as $event) {
             if ($event->time == $formFields['time'] && $event->date == $formFields['dateInput'] && $event->movie_id == $movie->id) {
 
