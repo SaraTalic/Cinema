@@ -93,6 +93,9 @@
 
                                     </div>
                                     <p class="p_1">*Izmijeniti možete samo broj karata.</p>
+                                    <p>*Rezervacije primamo do sat vremena prije projekcije.</p>
+                                        <p>*Rezervacija važi do 30 minuta prije projekcije.</p>
+                                    
 
                                 </form>
 

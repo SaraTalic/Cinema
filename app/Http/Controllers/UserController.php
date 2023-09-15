@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Validation\Rule;
 
+
 class UserController extends Controller
 {
 
@@ -34,7 +35,7 @@ class UserController extends Controller
         // Login
         auth()->login($user);
 
-        return redirect('/')->with('message', 'Uspješno ste se registrovali!');
+        return redirect()->intended()->with('message', 'Uspješno ste se registrovali!');
     }
 
     //Odjava Korisnika
@@ -66,7 +67,7 @@ class UserController extends Controller
         if (auth()->attempt($formFields)) {
             $request->session()->regenerate();
 
-            return redirect('/')->with('message', 'Uspješno ste se prijavili. Uživajte! :).');
+            return redirect()->intended()->with('message', 'Uspješno ste se prijavili. Uživajte! :).');
         }
 
         return back()->withErrors(['email' => 'POGREŠAN EMAIL ILI LOZINKA.'])->onlyInput('email');

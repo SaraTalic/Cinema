@@ -40,7 +40,10 @@
                     <div class="col-sm-12">
                         <div class="center_events_1 clearfix">
                             <h1>Repertoar </h1>
+                            
                         </div>
+                        
+                    
                     </div>
                 </div>
             </div>
@@ -51,7 +54,7 @@
         <div class="container">
             <div class="row">
                 <div class="events_main clearfix">
-
+                    <h4>Repertoar se mijenja svakog petka.</h4>
                     @foreach ($movies as $movie)
                         @if ($movie->on_air == 'yes')
                             <div class="tab-content clearfix">

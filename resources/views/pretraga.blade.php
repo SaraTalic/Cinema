@@ -86,6 +86,13 @@
 
                                                     <p class="para_2"><span>Glumci:</span> {{ $movie->actors }}</p>
                                                 </div>
+                                                @if($movie->on_air == 'yes')
+                                                <div class="dugmerez">
+                                                    <button name="rezervisi"><a
+                                                            href="/movies/{{ $movie->id }}/rezervacija"> Rezerviši
+                                                            karte </a> </button>
+                                                </div>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>

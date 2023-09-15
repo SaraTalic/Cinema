@@ -100,11 +100,28 @@ class MovieController extends Controller
 
 
         $events = Event::all();
+
+
+
         $formFields['time'] = $formFields['time'] . ':00';
         $usersres = Usersreservation::all();
-        //dodati vrijeme uslov
+
+        //vrijeme
+        $currentDate = date('Y-m-d');
+        $currentTime = date('H:i:s');
+        $vrijeme = explode(":", $formFields['time']);
+        $prviDio = intval($vrijeme[0]);
+        $oneHour = $prviDio - 1;
+        $oneHourBefore = (string) $oneHour . ":" . $vrijeme[1] . ":" . $vrijeme[2];
+        //dd($oneHourBefore);
+
         foreach ($events as $event) {
-            if ($event->time == $formFields['time'] && $event->date == $formFields['dateInput'] && $event->movie_id == $movie->id) {
+            if ($currentDate == $formFields['dateInput'] && $currentTime <= $oneHourBefore) {
+                //dd($timestamp);
+                return back()->withErrors(['not' => 'VRIJEME ZA REZERVACIJU JE ISTEKLO.']);
+            } elseif ($formFields['number_of_tickets'] <= 0) {
+                return back()->withErrors(['not' => 'NEISPRAVAN UNOS']);
+            } elseif ($event->time == $formFields['time'] && $event->date == $formFields['dateInput'] && $event->movie_id == $movie->id) {
 
                 $e = Event::find($event->id);
                 $br = intval($formFields['number_of_tickets']);
@@ -135,6 +152,7 @@ class MovieController extends Controller
                 }
 
             }
+
 
 
         }
@@ -214,8 +232,6 @@ class MovieController extends Controller
         return redirect('/mojerezervacije')->with('message', 'Rezervacija uspješno otkazana.');
     }
 
-
-
     //Izmjena Rezervacije
     public function update(Request $request, $id)
     {
@@ -278,6 +294,7 @@ class MovieController extends Controller
         }
         return back()->withErrors(['not' => 'NAŽALOST, NEDOVOLJAN BROJ SLOBODNIH KARATA']);
     }
+
 
 
     //Pretraga

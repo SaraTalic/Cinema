@@ -72,9 +72,15 @@
                                         <p class="text-red-500">{{ $message }}</p>
                                     @enderror
                                 </div>
+                                
                                 <div class="dugmepotvrda">
 
                                     <button type="submit" id="potvrda">Potvrdi </button>
+                                </div>
+                                <div>
+                                    <p>*Rezervacije primamo do sat vremena prije projekcije.</p>
+                                        <p>*Rezervacija važi do 30 minuta prije projekcije.</p>
+                                
                                 </div>
 
                             </form>

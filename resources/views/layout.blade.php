@@ -29,23 +29,10 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script>
-        function getNextThursday() {
-            var today = new Date();
-            var daysUntilThursday = (4 - today.getDay() + 7) % 7; // Calculate days until next Thursday
-            var nextThursday = new Date(today);
-            nextThursday.setDate(today.getDate() + daysUntilThursday);
-            return nextThursday;
-        }
-
-        window.onload = function() {
-            var today = new Date();
-            var nextThursday = getNextThursday();
-
-            var dateInput = document.getElementById("dateInput");
-            dateInput.min = today.toISOString().split("T")[0];
-            dateInput.max = nextThursday.toISOString().split("T")[0];
-        };
+    <script src="/js/app.js"></script>
+   <!-- <script src="/js/pagination.js"></script> -->
+    <script src="/js/date.js">
+        
     </script>
 </head>
 
