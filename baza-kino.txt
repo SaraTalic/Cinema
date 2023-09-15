@@ -1,0 +1,67 @@
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`, `time`) VALUES (1,'Oppenheimer',180,'Cillian Murphy, Emily Blunt, Robert Downey, Jr., Matt Damon, Rami Malek, Florence Pugh, Benny Safdie, Michael Angarano, Josh Hartnett, Kenneth Branagh','Christopher Nolan','open.jpg','2023-07-20','yes','yes','U ulozi J. Robert Oppenheimera gledaćemo Cillian Murphyja, dok Emily Blunt tumači lik njegove supruge, biologa i botaničarke Katherine “Kitty” Oppenheimer. Dobitnik Oskara, Matt Damon, glumi generala Leslie Groves Jr, direktora projekta Manhattan, dok je Robert Downey, Jr. u ulozi Lewis Strauss, osnivača Američkog komiteta za atomsku energiju.
+
+Nominovana za Oskara, Florence Pugh glumi psihijatra Jean Tatlock, Benny Safdie igra teoretičara fizike Edward Tellera, Michael Angarano glumi Robert Serbera, A Josh Hartnett pionira američke nuklearne nauke, Ernesta Lawrencea.
+
+U filmu OPPENHEIMER takođe glumi i dobitnik Oskara Rami Malek, kao i osam puta nominovan za Oskara glumac, scenarista, producent i reditelj Kenneth Branagh, koji je ranije sarađivao sa Nolanom.','Priča o američkom naučniku J. Robertu Oppenheimeru i njegovoj ulozi u razvoju atomske bombe.','19:15, 21:15');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`, `time`) VALUES (2,'Barbie',114,'Margot Robbie, Ryan Gosling, Helen Mirren, Will Ferrell','Greta Gerwig','barbie.jpg','2023-07-20','yes','yes','Roza avantura koja će oduševiti sve generacije. Ulogu najpoznatije lutke preuzima Margot Robbie, a njenu bolju polovinu Kena glumi Ryan Gosling.
+
+Režiju potpisuje Greta Gerwig dok zvjezdani glumački ansambl uključuje još i Willa Ferrella, Kate McKinnon, Simu Liu, Michaela Ceru i Americu Ferreru. Očekivano, scenografijom dominira upečatljiva roza boja, a cijela estetika filma inspirisana je prividom savršenog života i izgleda junaka filma.','Roza avantura koja će oduševiti sve generacije. Ulogu najpoznatije lutke preuzima Margot Robbie, a njenu bolju polovinu Kena glumi Ryan Gosling.','15:30,17:45');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`, `time`) VALUES (3,'Asteroid City',105,' Jason Schwartzman, Scarlett Johansson, Tom Hanks, Jeffrey Wright, Tilda Swinton, Bryan Cranston, Edward Norton, Adrien Brody, Liev Schreiber, Hope Davis, Stephen Park, Rupert Friend, Maya Hawke, Steve Carell, Matt Dillon, Hong Chau, Willem Dafoe, Margot Robbie, Tony Revolori, Jake Ryan, Jeff Goldblum','Wes Anderson','asteroid.jpg','2023-08-17','yes','yes','Radnja filma Asteriod City smještena je u izmišljeni, pustinjski grad u Americi, oko 1955. godine.
+
+Plan i program Konvencije mladih zvjezdoznalaca/Svemirskih kadeta, koja je organizovana da udruži učenike i roditelje širom zemlje kako bi učestvovali u druženju i takmičenju, biće poremećen na spektakularan način, usljed niza događaja koji mijenjaju svijet.','Radnja filma Asteriod City smještena je u izmišljeni, pustinjski grad u Americi, oko 1955. godine.','19:30,21:30');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`, `time`) VALUES (4,'Nindža kornjače: HAOS',99,'Micah Abbey, Shamon Brown, Jr., Hannibal Buress, Rose Byrne, Nicolas Cantu, John Cena, Jackie Chan, Ice Cube, Natasia Demetriou, Ayo Edebiri, Giancarlo Esposito, Post Malone, Brady Noon, Seth Rogen, Paul Rudd, Maya Rudolph','Jeff Rowe','nindza.jpg','2023-08-17','yes','no','Nakon što su se godinama krili od ljudi, braća Kornjače krenuli su da osvoje srca Njujorčana i da, čineći herojska djela, budu prihvaćeni kao obični tinejdžeri. Njihova nova prijateljica April O’Neil im pomaže da se izbore sa misterioznim zločinačkim udruženjem, ali ubrzo će imati pune ruke posla kada vojsku mutanata puste na njih.','Nakon što su se godinama krili od ljudi, braća Kornjače krenuli su da osvoje srca Njujorčana.','15:00,17:15');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`, `time`) VALUES (5,'Kolibri',126,'Pierfrancesco Favino, Kasia Smutniak, Bérénice Bejo, Nanni Moretti, Laura Morante, Sergio Albelli, Fotinì Peluso, Alessandro Tedeschi, Benedetta Porcaroli','Francesca Archibugi','kolibri.jpg','2023-08-17','yes','no','Čudan i čudesan život Marka Karere, od djetinjstva preko odraslog doba do njegovih poznih godina.','Čudan i čudesan život Marka Karere, od djetinjstva preko odraslog doba do njegovih poznih godina.','19:00');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`, `time`) VALUES (6,'Blue Beetle',128,'Xolo Mariduena, Susan Sarandon, Bruna Marquezine, Raoul Max Trujillo, Harvey Guillén, George Lopez, Adriana Barraza','Angel Manuel Soto','blue.jpg','2023-08-17','yes','no','Blue Beetle je akcijska, moderna priča koja daje svjež, zabavan pogled na žanr superheroja u kombinaciji odličnog humora, akcije i emocija koji se ne smiju propustiti.
+
+Ova epska avantura istražuje kako Jaime Reyes, običan mladić koji je tek diplomirao na fakultetu, nevoljko odgovara na poziv tajanstvene i moćne relikvije koja zauvijek mijenja njegovu sudbinu. On uz pomoć svoje porodice i izvanrednog tehnološki naprednog super odijela otkriva da može spasiti svijet.','Blue Beetle je akcijska, moderna priča koja daje svjež, zabavan pogled na žanr superheroja u kombinaciji odličnog humora, akcije i emocija koji se ne smiju propustiti.','19:45,22:15');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`, `time`) VALUES (7,'Anđeo tame',100,'Anna Camp, John Ales','Thomas Marchese','andjeo.jpg','2023-08-10','yes','no','Glavnu ulogu tumači Anna Camp, što je samo po sebi dovoljan razlog da pogledate ovaj horor film. Vjerujte, sigurno nećete ostati razočarani!
+
+Mlada majka, shrvana krivnjom nakon nestanka svog sina prije 5 godina, dobiva bizarnu ponudu da sazna istinu i ispravi stvari. Koliko je spremna platiti za iskupljenje?','Liječena ovisnica, opterećena ogromnim osjećajem krivice nakon nestanka malog sina, dobija bizarnu ponudu da sazna šta se u stvari desilo i da ispravi stvari pod uslovom da je spremna da plati zastrašujuću cijenu.','17:10,22:15');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`, `time`) VALUES (8,'Ljubav na prvi vau',106,'Lucy Hale, Grant Gustin','Nick Fabiano, Richard Alan Reid','vau.jpg','2023-08-17','yes','yes','Romantična komedija koja će vas uvjeriti da postoji ljubav i na drugi pogled.
+
+Nakon katastrofalnog prvog Tinder spoja, Nicole i Max se više nikad ne žele vidjeti. Ali kada nesretni par sazna da im psići iščekuju štence, odluče ostati skupa do poroda. Urnebesno neusklađeni Nicole i Max prisiljeni su postati odgovorni suroditelji, ali na kraju i sami pronađu ljubav.','Romantična komedija koja će vas uvjeriti da postoji ljubav i na drugi pogled.','19:10');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`) VALUES (9,'Gran Turismo',135,'Orlando Bloom, Darren Barnet, Archie Madekwe','Neill Blomkamp','grand.jpg','2023-09-21','no','no','Prema istinitoj priči koju priča Jan Mardenborou, film je ultimativno ispunjenje snova mladog igrača igrice Gran Turismo koji je svojim igračkim sposobnostima osvojio niz Nisanovih takmičenja kako bi postao profesionalni vozač trkačkih automobila. Jan Mardenborou (Arči Madekve) je tinejdžer koji po cijeli dan igra Gran Turismo igre, uprkos pridikama svojih roditelja. Međutim, kad dobije priliku za takmičenje koje održava “GT Academy”, Jan će imati šansu da svoje igračko iskustvo iskoristi za osvajanje glavne nagrade – ulazak u vode profesionalnih trkača!','Prema istinitoj priči koju priča Jan Mardenborou, film je ultimativno ispunjenje snova mladog igrača igrice Gran Turismo.');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`) VALUES (10,'Moje grčko vjenčanje 3',91,'Nia Vardalos, John Corbett, Elena Kampouris, Gia Carides, Joey Fatone, Louis Mandylor, with Lainie Kazan, Andrea Martin','Nia Vardalos','grcko.jpg','2023-09-21','no','no','Svjetski fenomen MOJE GRČKO VJENČANJE, scenaristkinje i rediteljke Nie Vardalos, ponovo dolazi u kino dvorane, predstavljajući potpuno novu avanturu. Pridružite se porodici Portokalos na njihovom emotivnom, urnebesnom i punom preokreta putovanju u Grčku i porodičnom okupljanju. Opa!','Svjetski fenomen MOJE GRČKO VJENČANJE, scenaristkinje i rediteljke Nie Vardalos, ponovo dolazi u kino dvorane, predstavljajući potpuno novu avanturu.');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`) VALUES (11,'Drakula: Buđenje zla',119,'Corey Hawkins, Aisling Franciosi, Liam Cunningham, David Dastmalchian','André Ovredal','drakula.jpg','2023-09-21','no','no','Zastrašujuća adaptacija jednog jezivog poglavlja popularnog horor romana Brama Stokera “Drakula”, u režiji Andréa Ovredala.
+
+Zastrašujuća priča o trgovačkom brodu Demeter, koji je unajmljen za prijevoz privatnog tereta - pedeset neoznačenih drvenih sanduka koji plove do Londona.
+Na tom putovanju čudni događaji zadese posadu koja pokušava preživjeti oceansko putovanje, svake noći praćeni nemilosrdnom prisutnošću na brodu. Kada Demeter konačno stigne do obala Engleske, to je pougljenjena, napuštena olupina, a od posade nema ni traga.','Legenda o Drakuli je rođena.');
+INSERT INTO `movies`(`id`, `title`, `duration`, `actors`, `director`, `logo`, `premiere`, `on_air`, `trending`, `description`, `small_description`) VALUES (12,'Pravednik 3',109,'Denzel Washington',' Antoine Fuqua','pravednik.jpg','2023-09-21','no','no','Nakon što je otišao u penziju kao državni ubica, Robert Mekal (Denzel Vašington) pokušava da pronađe utjehu u pronalasku pravde za sve potlačene. U završnom dijelu filma,Robert se nalazi u južnoj Italiji gdje pokušava da okrene leđa svojoj prošlosti, ali kad shvati da su ljudi s kojima se tamo zbližio pod jarmom lokalnog mafijaša Mekal zna šta on mora da učini po svaku cijenu - spriječiti mafiju i spasiti svoje prijatelje.','Nakon što je otišao u penziju kao državni ubica, Robert Mekal (Denzel Vašington) pokušava da pronađe utjehu u pronalasku pravde za sve potlačene.');
+
+
+-------------------------
+INSERT INTO `genres`(`id`, `name`) VALUES (1,'Akcija');
+INSERT INTO `genres`(`id`, `name`) VALUES (2,'Drama');
+INSERT INTO `genres`(`id`, `name`) VALUES (3,'Komedija');
+INSERT INTO `genres`(`id`, `name`) VALUES (4,'Avantura');
+INSERT INTO `genres`(`id`, `name`) VALUES (5,'Animacija');
+INSERT INTO `genres`(`id`, `name`) VALUES (6,'Romantična komedija');
+INSERT INTO `genres`(`id`, `name`) VALUES (7,'Biografija');
+INSERT INTO `genres`(`id`, `name`) VALUES (8,'Istorijski');
+INSERT INTO `genres`(`id`, `name`) VALUES (9,'Horor');
+INSERT INTO `genres`(`id`, `name`) VALUES (10,'Fantazija');
+
+
+---------------------------
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (1,1,2);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (2,1,7);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (3,1,8);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (4,2,10);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (5,2,3);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (6,2,1);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (7,3,2);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (8,4,5);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (9,4,4);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (10,4,1);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (11,5,2);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (12,6,1);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (13,6,4);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (14,7,9);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (15,8,6);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (16,9,1);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (17,9,2);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (18,9,4);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (19,10,3);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (20,11,9);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (21,12,1);
+INSERT INTO `moviegenres`(`id`, `movie_id`, `genre_id`) VALUES (22,3,3);
