@@ -1,4 +1,30 @@
-predmet: Internet programiranje
+# Cinema Reservation System
+
+## Overview
+
+This project is a Cinema Reservation System developed using **Laravel**. The application provides the following features:
+
+- **Browse Movie Schedule**: View the cinema's current repertoire and showtimes.
+- **Reserve Tickets**: Select a movie, choose the number of seats, and reserve tickets.
+- **Send Inquiries**: Users can send questions or inquiries regarding movies, showtimes, or other services.
+- **Cancel Reservations**: Users can cancel their ticket reservations.
+
+## Features
+
+- **User Authentication**: Sign up and log in to make reservations and manage user profiles.
+- **Movie Showtimes**: Real-time updates on movie showtimes and available screenings.
+- **Reservation Management**: Manage reservations, including the option to cancel them.
+- **Inquiry System**: Contact form for sending inquiries to the cinema staff.
+
+## Technologies Used
+
+- **Laravel**: Backend framework for handling routing, database, and authentication.
+- **PHP**: Server-side language.
+- **JavaScript**: For front-end functionality.
+- **MySQL**: Database for storing user and reservation data.
+
+
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
